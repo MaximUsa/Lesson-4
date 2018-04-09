@@ -1,5 +1,5 @@
 <?php
-$appid = '8a43ceeacde9e3ff1f67525b1d2de840';
+$appid = '933b7b9a84e3429a4660a9cb74e947d9';
 $id_default = '524894';
 if (isset($_REQUEST['city'])) {
     $city_id = $_REQUEST['city'];
@@ -21,7 +21,7 @@ $coord_lon = $decode_api['coord']['lon'];
 $coord_lat = $decode_api['coord']['lat'];
 
 $temp = $decode_api['main']['temp'];
-// Пересчитываем градусы
+
 $temp_celsius = $temp - 273;
 $temp_celsius = round($temp_celsius, 1). ' C&deg';
 
